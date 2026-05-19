@@ -106,3 +106,14 @@ This document is written for examiner/viva preparation. Each code line is listed
 | 6 | `plt.grid()` | Adds grid lines to make the graph easier to read. |
 | 7 | `plt.show()` | Displays the completed plot. |
 
+A scree plot is a graph used mainly in PCA (Principal Component Analysis) and other dimensionality reduction methods to show how much variance each principal component explains.
+
+It usually plots:
+
+X-axis: component number, like PC1, PC2, PC3
+Y-axis: eigenvalue or percentage of variance explained
+The goal is to decide how many components to keep. You look for the “elbow” point, where the curve changes from steep to flat. Components before the elbow explain a lot of variance; components after it add only small amounts.
+
+Example: if the plot drops sharply from PC1 to PC3 and then becomes almost flat, you might keep the first 3 principal components.
+
+It is called a “scree” plot because the small, low-value components look like loose rubble at the bottom of a slope.
